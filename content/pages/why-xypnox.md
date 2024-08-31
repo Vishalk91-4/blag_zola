@@ -7,7 +7,6 @@ template="page.html"
 +++
 
 Why though?
-{% end %}
 
 ## Backstory
 
