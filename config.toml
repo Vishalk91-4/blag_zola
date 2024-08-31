@@ -4,11 +4,6 @@ base_url = "https://www.xypnox.com/blag"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "material-dark"
-
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
@@ -18,14 +13,11 @@ theme = "xyblag"
 title = "Blag"
 description = "Blog of xypnox, a collection of Literature, Computing and Philosophy"
 
-generate_feed = true
-
 taxonomies = [
     # You can enable/disable RSS
     {name = "categories", rss = true},
     {name = "tags", rss = true},
 ]
-
 
 # CUSTOM VARIABLES
 [extra]

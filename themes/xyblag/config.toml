@@ -6,6 +6,7 @@ title = "xyblag theme theme"
 description = "xyblag is a minimal cutomizable theme for zola"
 highlight_code = true
 generate_feed = true
+theme = "xyblag"
 
 taxonomies = [
     {name = "categories", rss = true},
@@ -20,6 +21,7 @@ blog_menu = [
     {url = "$BASE_URL/tags", name = "Tags"},
     {url = "$BASE_URL/about", name = "About"},
 ]
-
+katex_enable = true
+katex_auto_render = true
 # Set to load disqus comments
 disqus_shortname = "your shortcode"
