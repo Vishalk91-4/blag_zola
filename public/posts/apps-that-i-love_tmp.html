@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>apps-that-i-love.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>+++
+title = &quot;Apps that I Love&quot;
+date = 2019-05-15</p>
+<p>[taxonomies]
+categories = [&quot;tech&quot;]
+tags = [&quot;tech&quot;, &quot;linux&quot;, &quot;android&quot;, &quot;list&quot;]</p>
+<p>+++</p>
+<p>Photo by Amith Nair on Unsplash</p>
+<p><strong>A</strong>long the several years, I have been using computers and smartphones, I have discovered a few real gems that have adorned my gadgets. I present here a list of Applications, for desktop and mobile that I have loved using and would recommend to anyone within a heartbeat.</p>
+<p>Maybe you may already know some of them but perhaps the reasons why I like them would differ from yours, so read on!</p>
+<h2 id="vs-code">VS Code</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/vscode.png" alt="My VSCode setup"></p>
+<p>I started proper coding with <a href="https://www.sublimetext.com/3">Sublime Text 3 beta</a>. I loved that text editor. It was smooth and beautiful. Then came <a href="https://atom.io/">Atom</a>, another marvel and a beast of another world. A slow behemoth that could do almost anything through extensions.</p>
+<p>And recently I was introduced to <a href="https://code.visualstudio.com/">VS Code</a>. I accept that I did not try it due to Microsoft's badge on it, at first. However, once I started using it I couldn't stop. It was both fast, extensible and more importantly, it got work done. You didn't have to spend hours finding the right extensions and then setting them up. It came with all the essentials included and had great official support for a lot of the languages that I used. The git integration is also awesome and especially helpful for large projects.</p>
+<p>For anyone that still uses Atom or Sublime Text, switch to VS Code. Just try it and you might never go back.</p>
+<h2 id="telegram">Telegram</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/telegram.png" alt=""></p>
+<p>In the days of the boom of messaging apps, I tried a lot of them. I tried WhatsApp, Viber, Line, Wechat, Messenger, Hangouts and then I settled on <a href="https://telegram.org/">Telegram</a>. There are a few reasons why. Telegram is faster than most of them.</p>
+<p>It is also secure and has a track record of not sharing data with any government agency or third party. And it has stickers and gifs that are very intuitive and easy to use. Half of my messages on my family's telegram group are using Stickers and GIFs. I recommend it almost everyone.</p>
+<h2 id="ubuntu--i3wm">Ubuntu + i3wm</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/i3.png" alt=""></p>
+<p>I have been a strong proponent of everything Linux, and I will not go on and repeat why I like <a href="https://www.ubuntu.com/download/desktop">Ubuntu</a> and any Linux distro in general. However, I will present to you a different way of using your laptop: using a tiling window manager. A <a href="https://wiki.archlinux.org/index.php/window_manager">window manager</a> is a very lightweight application that controls how each window looks and behaves on your desktop.</p>
+<p>i3 is a beginner friendly and fast window manager. I would recommend you to start with <a href="https://github.com/Airblader/i3">i3-gaps</a> (for those cool gaps between windows).</p>
+<p>In addition to being lightweight, It is fast and uses the screen-space efficiently. Not only is a WM fast in itself, but most WMs also use keybindings so changing windows and virtual desktops (Not VMs mind you) is a breeze. I have thoroughly enjoyed my experience with i3 and I would recommend anyone willing to give a little time to learn how to use it as it is very different from how you regularly use your OS. Here is a <a href="https://www.youtube.com/watch?v=j1I63wGcvU4">brief tutorial</a> about i3 which helped me get started.</p>
+<h2 id="typora">Typora</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/typora.png" alt=""></p>
+<p><a href="https://typora.io/">Typora</a> is a minimal markdown editor. But as Mr. Nicholas Burroughs aptly said:</p>
+<blockquote>
+<p>&quot;Minimalism is not a lack of something. It’s simply the perfect amount of something.&quot;</p>
+</blockquote>
+<p>Typora is just the right amount of markdown editor you need. It behaves similar to a WYSIWYG editor but hides its features behind a set of keybindings and views. It is simple to use if you are familiar with markdown and very very enjoyable for distraction-free writing. In fact, I have written this post on Typora itself and I have even created <a href="https://theme.typora.io/theme/Xydark/">a theme</a> for it.</p>
+<h2 id="altos-adventure">Alto's Adventure</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/alto.png" alt=""></p>
+<p>Let's throw in a game for some fun. <a href="http://altosadventure.com/">Alto's Adventure</a> is <strong>the</strong> game that I play. I don't have any other games on my phone and even though I don't play it often nowadays, this is my favorite game so far on Android. It is an infinite runner where you can jump and do backflips. But don't let the simplicity distract you. With a marvelous soundtrack and a phenomenal procedurally generated environment, It will surely make your evenings a hell lot of fun. Also, don't forget to try Zen Mode.</p>
+<h2 id="joey-for-reddit">Joey for Reddit</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/joey.jpg" alt=""></p>
+<p>Another Android Reddit app. But <a href="https://play.google.com/store/apps/details?id=o.o.joey&amp;hl=en_IN">Joey</a> has the highest ratings on the play store (4.9 / 5). And there are plenty of reasons why; highly customizable, fast, gesture-based, fullscreen immersive content. It is a fun app and makes the Reddit experience on mobile fantastic. If you are a Redditor you should definitely check this App.</p>
+<h2 id="figma">Figma</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/figma.png" alt=""></p>
+<p><a href="https://www.figma.com/">Figma</a> is a design tool. It is a fast prototyping software and is available as an online app. It is very easy and intuitive and has great videos on getting started. It is free for all the basic usage and I have had a great time using it. I have recently started designing a lot more on figma and my previous pick was Inkscape, which wasn't so nice as it had a few performance issues and it was a vector drawing application, not exactly a design app.</p>
+<h2 id="eboox-ebook-reader">Eboox Ebook reader</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/eboox.png" alt=""></p>
+<p>Another Android app, it is an eBook Reader and that's it. <a href="https://play.google.com/store/apps/details?id=com.reader.books&amp;hl=en_IN">Eboox</a> has very basic book management but where it excels is the reading experience. It is simply exceptional, with the included &quot;Tinos&quot; font, it is a great and minimal Ebook reader for mobile. You can highlight quotes and put bookmarks too. But the reason I like this app is that it does one thing and it does it very well.</p>
+<h2 id="youtube-vanced">Youtube Vanced</h2>
+<p><img src="file:///c:/blag/images/apps-i-love/YouTube-Vanced.webp" alt=""></p>
+<p>I know you are smart and you have an adblocker installed on your browser. But what about mobile? You can't prevent ads from showing up on Youtube on mobile, but can you? <a href="https://www.xda-developers.com/youtube-vanced-apk/">Youtube vanced</a> is a perfect replacement for youtube albeit with a few minor tweaks, a true black dark mode, ability to play higher resolution videos than supported, the ability for background playback (you can let the app play the video as a music player in your notifications!) but most importantly no adds.</p>
+<p>As most of you might have guessed by now, no it is not available on Play Store and for obvious reasons. Hence, you have to side-load it and do a minor setup if you want to login using your Google account. However, I think it is worth the effort and is simply fantastic.</p>
+<blockquote>
+<p>Fun fact <code>Youtube Vanced = Youtube Advanced - Ad</code></p>
+</blockquote>
+<hr>
+<p>That might be all that I have, for now, If I get to experience anything else, I will make sure to share it in another blog post!</p>
+
+</body>
+</html>
