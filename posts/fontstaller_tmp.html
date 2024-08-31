@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fontstaller.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>+++
+title = &quot;Fontstaller&quot;
+date = 2018-05-18</p>
+<p>[taxonomies]
+categories = [&quot;tech&quot;]
+tags = [&quot;tech&quot;, &quot;project&quot;, &quot;linux&quot;]
++++</p>
+<p>I have had troubles installing fonts in Linux. Although its far easier than Windows where the only way to install a bunch of fonts is to open the file and click install fonts. In Linux however, you can copy your fonts to <code>~/.fonts</code> or <code>/usr/share/fonts</code> and they will be recognized by all the applications. But can this process be improved or streamlined?</p>
+<p>The main problem that I was facing was that while many sites offered fonts for free they were usually zipped/archived. Which meant that they would have to be manually unarchived one by one to install the fonts, which considering the number of fonts (36!) I wanted to install at the time was way too much. So clearly I needed a script to unzip and copy the font files in <code>~/.fonts</code>. The problem was that although the <code>unzip</code> command is fairly straightforward and could be used I didn't have much control over it.</p>
+<p>So I searched some more and stumbled upon the fact that python comes preloaded with a zip archive reading library named <code>zipfile</code>. And I could use it to spin up a small python script to make the extraction process &quot;smart&quot;. By smart, I mean that the program could differentiate between a directory containing fonts and archives containing fonts. It can also work with nested directory structure and even detect whether a font has been preinstalled or not.</p>
+<h2 id="the-program-itself-fontstaller">The program itself: FontStaller</h2>
+<p><img src="https://raw.githubusercontent.com/xypnox/fontstaller/master/fontstaller-logo.png" alt="Logo"></p>
+<blockquote>
+<p>You can find the code in the GitHub repo <a href="https://github.com/xypnox/fontstaller/">xypnox/fontstaller</a>.</p>
+</blockquote>
+<p>At the default settings, the Fontstaller script installs the fonts located in the folder <code>fonts</code> in the current directory. It installs all the zips that have a font file. Or any (sub - sub ...) subdirectory (ies) that have a font file (generally ttf, otf).</p>
+<p>The fonts are by default copied to the folder <code>~/.fonts</code>. An interesting point to note is that the directory structure of your initial <code>fonts</code> folder is <em>not</em> preserved. This is to simplify distinguishing already installed fonts. This way the script can easily check only folder names in <code>~/.fonts</code> and doesn't have to deal with subdirectory structure.</p>
+<p>There are a few command line options to tweak the behavior of the script, they are mentioned as follows:</p>
+<table>
+<thead>
+<tr>
+<th>argument</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h, --help</td>
+<td></td>
+<td>show help message and exit</td>
+</tr>
+<tr>
+<td>--fdir</td>
+<td>'fonts'</td>
+<td>directory containing fonts</td>
+</tr>
+<tr>
+<td>--idir</td>
+<td>'~/.fonts'</td>
+<td>directory in which fonts will be installed</td>
+</tr>
+<tr>
+<td>--ignorezip</td>
+<td></td>
+<td>Ignore zipped files</td>
+</tr>
+</tbody>
+</table>
+<p>I know there are few bugs that still exist. Such as the fact that the script doesn't deal well with subdirectory structure in the archived files. However, it is still quite useful.</p>
+<p>If you are interested in the fonts I was installing, check this <a href="https://github.com/xypnox/fontstaller/releases/download/v1.0.0/fonts.zip">archived zip</a></p>
+<hr>
+<h2 id="tricks">Tricks</h2>
+<p>I learned a few new tricks about python scripting that I would share here.</p>
+<h3 id="splitting-and-slicing-simultaneously">Splitting and slicing simultaneously</h3>
+<p>You split and slice simultaneously by just splicing the output of Splitting command. For example, the line in my code that uses it is :</p>
+<pre class="hljs"><code><div>idir = args.idir + <span class="hljs-string">'/'</span> + zfile.split(<span class="hljs-string">'/'</span>)[<span class="hljs-number">-1</span>][:<span class="hljs-number">-4</span>]
+</div></code></pre>
+<p>Here I needed only the name of the archive without the <code>.zip</code> extension. So I first split the string using <code>/</code> then slice the last element till the fifth last character. Pretty neat.</p>
+<h3 id="parsing-command-line-parameters-in-python">Parsing command-line parameters in python</h3>
+<p>I know its quite dumb to say it's a trick but it took me several readings of Manual and a few different command line parsing methods to flat this one out. I finally ended up using the <code>argparse</code> package which is a little hard, to begin with, but offers a great amount of flexibility and nice user experience such as auto-generated <code>help</code> command!</p>
+<p>It is too much, to begin with, so I will simply link to its Manual page in Python : <a href="https://docs.python.org/3.6/library/argparse.html">Argparse</a>.</p>
+
+</body>
+</html>
