@@ -94,32 +94,3 @@ To enable disqus comments set the [`disqus_shortname`](https://help.disqus.com/e
 # Disqus shortname for comments by disqus, when not set comment section isn't displayed
 disqus_shortname = "xypnox-blag"
 ```
-
-### KaTeX math formula support
-
-This theme contains math formula support using [KaTeX](https://katex.org/),
-which can be enabled by setting `katex_enable = true` in the `extra` section
-of `config.toml`:
-
-```toml
-[extra]
-katex_enable = true
-```
-
-After enabling this extension, the `katex` short code can be used in documents:
-
-- `{{ katex(body="\KaTeX") }}` to typeset a math formula inlined into a text,
-  similar to `$...$` in LaTeX
-- `{% katex(block=true) %}\KaTeX{% end %}` to typeset a block of math formulas,
-  similar to `$$...$$` in LaTeX
-
-#### Automatic rendering without short codes
-
-Optionally, `\\( \KaTeX \\)` inline and `\\[ \KaTeX \\]` / `$$ \KaTeX $$`
-block-style automatic rendering is also supported, if enabled in the config:
-
-```toml
-[extra]
-katex_enable = true
-katex_auto_render = true
-```
