@@ -12,9 +12,7 @@ metadata_image = "/posts/notes/intro/cover-intro.png"
 
 +++
 
-{% cover(src="cover-intro.png") %}
 An introduction to a Journey in note taking.
-{% end %}
 
 Once when I was foolish and clever, I thought I would never need to write anything down. That I will remember everything forever. I lived with this assumption till I came to my senses.
 

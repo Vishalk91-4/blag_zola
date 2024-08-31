@@ -7,10 +7,6 @@ categories = ["literature"]
 tags = ["review", "book"]
 +++
 
-{% cover(src="/blag/images/the-elderling-realm.jpg") %}
-Photo by Michael LaRosa on Unsplash
-{% end %}
-
 The elderling realm is not a single book. It is not even a series of books, it is a universe in which several series written by the author Robin Hobb take place. I completed three series out of five main series released till now. And I have thoroughly enjoyed her work. The books are very easy to recommend and are considered classics among recent fantasy novels. I will try to keep this review as free from spoilers as I can.
 
 The world of the elderling represents a medieval society mixed with dragons, pirates and the slight touch of magic. The stories or I should say epics begin smoothly and are carried forward effortlessly. It never feels like the author was trying to make a point or desperately moving the story forward in a single direction. It feels as if you are watching a natural progression of events. The smooth and tranquil writing style of Robin Hobb is the best part amongst a stellar set of novels.

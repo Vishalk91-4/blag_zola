@@ -8,9 +8,6 @@ categories = ["tech"]
 tags = ["tech", "project", "linux", "todo", "python"]
 +++
 
-{% cover(src="http://www.optipess.com/comics/2018-09-28-927_To-Do_SQ.png") %}
-Credit - optipess.com
-{% end %}
 
 So, I have been working this past few weeks on a todo application using commandline interface in Python. You can skip the boring backstory and jump right into installation if you want to.
 

@@ -12,9 +12,6 @@ metadata_image = "/posts/culture-2020/social.png"
 
 +++
 
-{% cover(src="cover.png") %}
-My year in Culture - 2020.
-{% end %}
 
 This year I have read several books, watched some movies, and listened to a lot of songs; here is a roundup of my favorite ones.
 

@@ -13,10 +13,6 @@ metadata_image = "/posts/glorious-endgame/social.png"
 +++
 
 
-{% cover(src="cover.png") %}
-My endgame
-{% end %}
-
 
 I recently switched to [Manjaro i3](https://manjaro.org/download/#i3). And so far it has been my best experience with linux. I took my experience from customizing and tweaking ubuntu throughout the years into the final "endgame" setup I have now. And I have no intentions of switching things soon. Here is a showcase of my setup and some discussion on the things I discovered during the process.
 

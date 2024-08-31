@@ -12,11 +12,9 @@ metadata_image = "/posts/tech-2020/social.png"
 
 +++
 
-{% cover(src="cover.png") %}
 My year in Tech - 2020.
 
 There will be a different post for culture 2020 as well.
-{% end %}
 
 When someone starts writing a post about a tech product, it ends up being one of two things: Either an unbiased review or a very biased piece highlighting how the thing is "the best thing ever" / "the worst thing ever". And I promise you I will try my best not to do any of those in this post.
 

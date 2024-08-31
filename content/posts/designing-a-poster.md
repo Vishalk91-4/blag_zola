@@ -8,10 +8,6 @@ categories = ["design"]
 tags = ["design", "poster"]
 +++
 
-{% cover(src="/blag/images/designing-a-poster.png") %}
-visit posters.xypnox.com to view all posters.
-{% end %}
-
 > To design a good poster,
 > you have to design 100 bad posters first.
 

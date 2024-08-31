@@ -12,9 +12,6 @@ metadata_image = "/posts/migrating-to-zola/cover.png"
 
 +++
 
-{% cover(src="cover.png") %}
-The two sides of the Yin and Yang combine to provide ultimate harmony!
-{% end %}
 
 I recently migrated my _blag_ from Hugo to [Zola](https://www.getzola.org/). I made my theme for this blog and it was a blast!
 

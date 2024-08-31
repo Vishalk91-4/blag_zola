@@ -7,10 +7,6 @@ categories = ["literature"]
 tags = ["poem"]
 +++
 
-{% cover(src="/blag/images/lonely.jpg") %}
-Photo by Brannon Naito on Unsplash
-{% end %}
-
 I see you down the street, alone\
 Walking slowly towards me\
 In the cold hazy wind\

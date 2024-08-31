@@ -7,10 +7,6 @@ categories = ["tech"]
 tags = ["tech", "project", "linux"]
 +++
 
-{% cover(src="/blag/images/fontstaller-cover.jpg") %}
-Install fonts quickly on linux
-{% end %}
-
 I have had troubles installing fonts in Linux. Although its far easier than Windows where the only way to install a bunch of fonts is to open the file and click install fonts. In Linux however, you can copy your fonts to `~/.fonts` or `/usr/share/fonts` and they will be recognized by all the applications. But can this process be improved or streamlined?
 
 The main problem that I was facing was that while many sites offered fonts for free they were usually zipped/archived. Which meant that they would have to be manually unarchived one by one to install the fonts, which considering the number of fonts (36!) I wanted to install at the time was way too much. So clearly I needed a script to unzip and copy the font files in `~/.fonts`. The problem was that although the `unzip` command is fairly straightforward and could be used I didn't have much control over it.

@@ -13,10 +13,6 @@ hide_toc = true
 
 +++
 
-{% cover(src="cover.png") %}
-A few covers, discussed in detail below.
-{% end %}
-
 I started creating covers for my Spotify Playlists earlier this year. It started as a fun thing to make the playlists look cool and relatable and transitioned into a tradition.
 
 Using custom images isn't anything new, but not many create/edit the images specifically to use as covers. Adding the name of the playlist is one of the things that separates just an image from a cover specifically for that playlist.

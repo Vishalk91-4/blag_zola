@@ -6,8 +6,6 @@ path="why-xypnox"
 template="page.html"
 +++
 
-Why though?
-
 ## Backstory
 
 Once upon a time, I was introduced to email. And my first email was from yahoo.com (Which by now is most probably destroyed). It had the most common naming scheme, namely, your name followed by your birth year.

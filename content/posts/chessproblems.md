@@ -9,10 +9,6 @@ tags = ["tech", "blender", "chess"]
 
 +++
 
-{% cover(src="/blag/images/chess-problems.png") %}
-Rendered using Blender
-{% end %}
-
 So I was interested in this chess puzzle:
 
 ![](https://i.imgur.com/PyhIvWY.png)

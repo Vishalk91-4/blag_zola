@@ -8,9 +8,7 @@ tags = ["tech", "linux", "android", "list"]
 
 +++
 
-{% cover(src="/blag/images/apps-i-love-cover.jpg") %}
 Photo by Amith Nair on Unsplash
-{% end %}
 
 **A**long the several years, I have been using computers and smartphones, I have discovered a few real gems that have adorned my gadgets. I present here a list of Applications, for desktop and mobile that I have loved using and would recommend to anyone within a heartbeat.
 
