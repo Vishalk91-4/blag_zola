@@ -6,7 +6,6 @@ path="why-xypnox"
 template="page.html"
 +++
 
-{% cover(src="/blag/images/why-xypnox-cover.jpg") %}
 Why though?
 {% end %}
 
